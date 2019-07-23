@@ -28,6 +28,10 @@ const (
 	DockerV2ListMediaType = "application/vnd.docker.distribution.manifest.list.v2+json"
 	// DockerV2Schema2ForeignLayerMediaType is the MIME type used for schema 2 foreign layers.
 	DockerV2Schema2ForeignLayerMediaType = "application/vnd.docker.image.rootfs.foreign.diff.tar.gzip"
+	// DockerV2Schema2LayerGzipEncMediaType is MIME type used for encrypted compressed layers.
+	DockerV2Schema2LayerGzipEncMediaType = "application/vnd.docker.image.rootfs.diff.tar.gzip+enc"
+	// DockerV2Schema2LayerEncMediaType is MIME type used for encrypted layers.
+	DockerV2Schema2LayerEncMediaType = "application/vnd.docker.image.rootfs.diff.tar+enc"
 )
 
 // DefaultRequestedManifestMIMETypes is a list of MIME types a types.ImageSource
